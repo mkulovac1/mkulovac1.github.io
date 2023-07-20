@@ -115,3 +115,20 @@ const header = document.querySelector("header")
 window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY > 50)
 })
+
+
+function hireMe() {
+    /* const hire = document.getElementById("paragraph-hire-me")
+    if(hire) {
+        const content = "You can hire me by sending an offer to my e-mail merim.kulovac@outlook.com or merimkulovac2@gmail.com or calling me on phone number +38761299602."
+        hire.textContent = content
+    } */
+
+    var emailAdresa = "merim.kulovac@outlook.com";
+    var subject = "Job offer";
+    var body = "I wanna hire you to work on specific project...";
+    var mailtoLink = "mailto:" + emailAdresa + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.location.href = mailtoLink;
+}
+
+
