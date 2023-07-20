@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="sticky">
         <div class="logo"><span>M</span>erim.</div>
         <ul class="navlist">
             <li><a href="#home">Home</a></li>
@@ -390,17 +390,26 @@
         </div>
 
         <form action="#">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your e-mail">
+            <input type="text" placeholder="Your name" required>
+            <input type="text" placeholder="Your e-mail" required>
             <input type="text" placeholder="Your adress">
-            <input type="number" placeholder="Your phone number">
-            <input type="text" placeholder="Your name">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="number" placeholder="Your phone number" required>
+            <input type="text" placeholder="Your name" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
             <div class="btn-box formBtn">
                 <button type="submit" class="btn">Send message</button>
             </div>
         </form>
     </section>
+
+
+
+
+    <!-- footer za sajt -->
+    <footer>
+        <p>Copyright &copy; 2023 by Merim Kulovac || All right reserved.</p>
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
