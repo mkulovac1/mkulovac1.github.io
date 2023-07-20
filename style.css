@@ -457,3 +457,237 @@ a.btn:nth-child(2):hover {
 
 
 
+.skills {
+    background: var(--secon-bg-color);
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html-c {
+    width: 95%;
+    animation: html-c 2s;
+}
+
+.skill-bar .bar .css-c {
+    width: 87%;
+    animation: css-c 3s;
+}
+
+.skill-bar .bar .javascript-c {
+    width: 90%;
+    animation: javascript-c 4s;
+}
+
+.skill-bar .bar .react {
+    width: 86%;
+    animation: react 5s;
+}
+
+.skill-bar .bar .angular {
+    width: 83%;
+    animation: angular 6s;
+}
+
+.skill-bar .bar .webflow {
+    width: 88%;
+    animation: webflow 7s;
+}
+
+@keyframes html-c {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes css-c {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 87%;
+    }
+}
+
+@keyframes javascript-c {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 83%;
+    }
+}
+
+@keyframes webflow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 88%;
+    }
+}
+
+
+.skill-right .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30 px;
+}
+
+.skill-right .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar .java {
+    width: 95%;
+    animation: java-a 2s;
+}
+
+.skill-bar .bar .csharp {
+    width: 93%;
+    animation: csharp-a 3s;
+}
+
+.skill-bar .bar .cpp {
+    width: 98%;
+    animation: cpp-a 4s;
+}
+
+.skill-bar .bar .cprogramming {
+    width: 96%;
+    animation: cprogramming-a 5s;
+}
+
+.skill-bar .bar .python {
+    width: 90%;
+    animation: python-a 6s;
+}
+
+.skill-bar .bar .sql {
+    width: 85%;
+    animation: sql-a 7s;
+}
+
+
+
+@keyframes  java-a {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes csharp-a {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 93%;
+    }
+}
+
+@keyframes cpp-a {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 98%;
+    }
+}
+
+@keyframes cprogramming-a {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 96%;
+    }
+}
+
+@keyframes python-a {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes sql-a {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
