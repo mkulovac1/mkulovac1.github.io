@@ -103,7 +103,10 @@ let section = document.querySelectorAll('selection')
 
 function activeMenu() {
     let len = section.length
-    while(--len && window.scrollY + 97 < section[len].offsetTop) {}
+    // while(--len && window.scrollY + 97 < section[len].offsetTop) {}
+    while (len >= 0 && window.scrollY + 97 < section[len]?.offsetTop) {
+        len--;
+    }
     menuLi.forEach(s => s.classList.remove("active"))
     menuLi[len].classList.add("active")
 }
@@ -130,5 +133,25 @@ function hireMe() {
     var mailtoLink = "mailto:" + emailAdresa + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     window.location.href = mailtoLink;
 }
+
+
+let menuIcon = document.querySelector("#menu-icon")
+let navlist = document.querySelector(".navlist")
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x")
+    navlist.classList.toggle("open")
+}
+window.onscroll = () => {
+    menuIcon.classList.remove("bx-x")
+    navlist.classList.remove("open")
+}
+
+
+
+
+
+
+
+
 
 
