@@ -147,11 +147,23 @@ window.onscroll = () => {
 }
 
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting)
+            entry.target.classList.add("show-items")
+        else
+            entry.target.classList.remove("show-items")
+    })
+})
 
+const scrollScale = document.querySelectorAll(".scroll-scale")
+scrollScale.forEach((e) => observer.observe(e))
 
+const scrollBottom = document.querySelectorAll(".scroll-bottom")
+scrollBottom.forEach((e) => observer.observe(e))
 
-
-
+const scrollTop = document.querySelectorAll(".scroll-top")
+scrollTop.forEach((e) => observer.observe(e))
 
 
 
