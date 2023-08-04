@@ -169,15 +169,17 @@ scrollTop.forEach((e) => observer.observe(e))
 
 function contactMe() {
   var name = document.getElementById("contact_name").value;
-  // var email = document.getElementById("contact_email").value;
+  var emailSender = document.getElementById("contact_email").value;
   var email = "merim.kulovac@outlook.com"
   var adress = document.getElementById("contact_adress").value;
   var phone = document.getElementById("contact_number").value;
   var message = document.getElementById("contact_message").value;
 
   var subject = "[Portfolio] Contact me";
-  var body = message + "\n\n" + "Sincerely,\nName: " + name + ",\nAdress: " + adress + ",\nPhone number: " + phone + "\n"
+  var body = message + "\n\n" + "Sincerely,\nName: " + name + ',\nE-mail: ' + emailSender +",\nAdress: " + adress + ",\nPhone number: " + phone + "\n"
   var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  if(name.length > 0 && adress.length > 0 && phone.length > 0 && message.length > 0)
-    window.location.href = mailtoLink;
+  if(name.length > 0 && adress.length > 0 && phone.length > 0 && message.length > 0) {
+    event.preventDefault();
+    window.open(mailtoLink);
+  }
 }
