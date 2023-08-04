@@ -485,13 +485,13 @@
         </div>
 
         <form action="#" class="scroll-bottom">
-            <input type="text" placeholder="Your name" required>
-            <input type="text" placeholder="Your e-mail" required>
-            <input type="text" placeholder="Your adress">
-            <input type="number" placeholder="Your phone number" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <input id="contact_name" type="text" placeholder="Your name" required>
+            <input id="contact_email" type="text" placeholder="Your e-mail" required>
+            <input id="contact_adress" type="text" placeholder="Your adress">
+            <input id="contact_number" type="number" placeholder="Your phone number" required>
+            <textarea id="contact_message" name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
             <div class="btn-box formBtn">
-                <button type="submit" class="btn">Send message</button>
+                <button type="submit" class="btn" onclick="contactMe()">Send message</button>
             </div>
         </form>
     </section>

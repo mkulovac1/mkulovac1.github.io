@@ -167,3 +167,16 @@ scrollTop.forEach((e) => observer.observe(e))
 
 
 
+function contactMe() {
+  var name = document.getElementById("contact_name").value;
+  // var email = document.getElementById("contact_email").value;
+  var email = "merim.kulovac@outlook.com"
+  var adress = document.getElementById("contact_adress").value;
+  var phone = document.getElementById("contact_number").value;
+  var message = document.getElementById("contact_message").value;
+
+  var subject = "[Portfolio] Contact me";
+  var body = message + "\n\n" + "Sincerely,\nName: " + name + ",\nAdress: " + adress + ",\nPhone number: " + phone + "\n"
+  var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  window.location.href = mailtoLink;
+}
