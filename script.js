@@ -178,5 +178,6 @@ function contactMe() {
   var subject = "[Portfolio] Contact me";
   var body = message + "\n\n" + "Sincerely,\nName: " + name + ",\nAdress: " + adress + ",\nPhone number: " + phone + "\n"
   var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  window.location.href = mailtoLink;
+  if(name.length > 0 && adress.length > 0 && phone.length > 0 && message.length > 0)
+    window.location.href = mailtoLink;
 }
