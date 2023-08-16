@@ -309,7 +309,7 @@ section {
 }
 
 
-/* stil za about sekciju */
+/* style for about section */
 
 .about {
     display: flex;
@@ -404,7 +404,7 @@ section {
     }
 }
 
-/* sekcija za usluge */
+/* service section */
 
 .main-text {
     width: 100%;
@@ -522,8 +522,14 @@ section {
 
 
 .skill-left .skill-bar .info {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; */
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
     padding: 0 10px;
 }
@@ -633,10 +639,15 @@ section {
 
 
 .skill-right .skill-bar .info {
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30 px;
+    padding: 0 30 px;*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    padding: 0 30px;
 }
 
 .skill-right .skill-bar .bar {
@@ -900,7 +911,8 @@ footer a i {
 
 
 
-/* za prejaki scroll */
+/* for scroll */
+
 .scroll-scale {
     opacity: 0;
     transform: scale(.9);
