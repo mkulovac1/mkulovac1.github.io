@@ -486,8 +486,7 @@ section {
 
 
 
-
-
+/* skill section */
 .skills {
     background: var(--secon-bg-color);
 }
@@ -941,7 +940,7 @@ footer a i {
 
 
 
-
+/* project - portfolio section */
 .portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
