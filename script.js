@@ -99,14 +99,11 @@ function readMoreWebDevelopment() {
   
       
 let menuLi = document.querySelectorAll('header ul li a')
-let section = document.querySelectorAll('selection')
+let section = document.querySelectorAll('section')
 
 function activeMenu() {
     let len = section.length
-    // while(--len && window.scrollY + 97 < section[len].offsetTop) {}
-    while (len >= 0 && window.scrollY + 97 < section[len]?.offsetTop) {
-        len--;
-    }
+    while(--len && window.scrollY + 97 < section[len].offsetTop) {}
     menuLi.forEach(s => s.classList.remove("active"))
     menuLi[len].classList.add("active")
 }
