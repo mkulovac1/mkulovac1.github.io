@@ -236,7 +236,6 @@ section {
 .social-icons {
     margin-top: 8rem;
     display: flex;
-    justify-content: space-between;
     width: 220px;
     height: 40px;
 }
@@ -245,6 +244,7 @@ section {
     display: inline-flex;
     width: 50px;
     height: 100%;
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
     background: var(--bg-color);

@@ -43,11 +43,17 @@ setInterval(changeText, 3000)
 
 function readMore() {
   var content = document.getElementById("paragraph-about-content");
-  var expandedText = "My name is Merim Kulovac. I was born in the Balkans, in a small state of Bosnia and Herzegovina. I grew up and live in Sarajevo. I graduated from the High School of Electrical Engineering in Sarajevo, major: computer science and informatics. I recently graduated from the Faculty of Electrical Engineering at the University of Sarajevo, department: computer science and informatics. During my studies, I worked on a lot of projects (private and for university). My focus is mainly on full-stack development of web applications, although lately I have also been attracted to the development of mobile applications and programming in the field of artificial intelligence. I am a very ambitious and hard-working person. I am looking for an opportunity to prove and improve myself. I am ready for new experiences and challenges, too.";
+  var expandedText = "My name is Merim Kulovac. I was born in the Balkans, in a small state of Bosnia and Herzegovina. I grew up and live in Sarajevo. I graduated from the High School of Electrical Engineering in Sarajevo, major: computer science and informatics. I also graduated from the Faculty of Electrical Engineering at the University of Sarajevo, department: computer science and informatics. During my studies and later on, I worked on a lot of projects (private, internship, university). My focus is mainly on full-stack development of web applications, although lately I have also been attracted to the development of mobile applications and programming in the field of artificial intelligence. Ambition and dedication define my approach to every endeavor. I am a firm believer in continuous self-improvement, and I thrive on the challenges that come with it. " +
+   "I am now on the lookout for opportunities that will allow me to not only " + 
+  "showcase my skills but also to further develop and refine them. I am eager to " +
+  "embrace new experiences, learn from them, and confront fresh challenges " +
+  "head-on. If you're in search of a highly motivated, hardworking, and adaptable " + 
+  "professional who is passionate about technology and innovation, I am ready to " +
+ "make a valuable contribution to your team.";
   var button = document.getElementById("btn-about");
 
   if (content.innerHTML === expandedText) {
-    content.innerHTML = "My name is Merim Kulovac. I was born in the Balkans, in a small state of Bosnia and Herzegovina. I grew up and live in Sarajevo. I graduated from the High School of Electrical Engineering in Sarajevo, major: computer science and informatics. I recently graduated from the Faculty of Electrical Engineering at the University of Sarajevo, department: computer science and informatics.";
+    content.innerHTML = "My name is Merim Kulovac. I was born in the Balkans, in a small state of Bosnia and Herzegovina. I grew up and live in Sarajevo. I graduated from the High School of Electrical Engineering in Sarajevo, major: computer science and informatics. I also graduated from the Faculty of Electrical Engineering at the University of Sarajevo, department: computer science and informatics.";
     button.innerText = 'Read more';
   } else {
     content.innerHTML = expandedText;
