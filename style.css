@@ -310,7 +310,6 @@ section {
 
 
 /* style for about section */
-
 .about {
     display: flex;
     justify-content: center;
@@ -483,9 +482,6 @@ section {
 }
 
 
-
-
-
 /* skill section */
 .skills {
     background: var(--secon-bg-color);
@@ -636,7 +632,6 @@ section {
     }
 }
 
-
 .skill-right .skill-bar .info {
     /*display: flex;
     justify-content: space-between;
@@ -687,8 +682,6 @@ section {
     width: 85%;
     animation: sql-a 7s;
 }
-
-
 
 @keyframes  java-a {
     0% {
@@ -744,8 +737,6 @@ section {
     }
 }
 
-
-
 .contact {
     background: var(--secon-bg-color);
     width: 100%;
@@ -783,10 +774,6 @@ section {
     font-size: 1rem;
 }
 
-
-
-
-
 footer {
     padding: 1.5rem 10%;
     display: flex;
@@ -811,7 +798,6 @@ footer a i {
     font-size: 1rem;
     color: var(--secon-bg-color);    
 }
-
 
 /* responsive */
 @media(max-width:991px) {
@@ -925,11 +911,7 @@ footer a i {
     }
 }
 
-
-
-
 /* for scroll */
-
 .scroll-scale {
     opacity: 0;
     transform: scale(.9);
@@ -953,10 +935,6 @@ footer a i {
     opacity: 1;
     transform: translateX(0);
 }
-
-
-
-
 
 /* project - portfolio section */
 .portfolio-gallery {
