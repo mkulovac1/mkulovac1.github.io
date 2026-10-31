@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- GitHub Pages can't send security headers, so the CSP lives here.
-         Hashes cover the inline style and script blocks: if you edit either one,
-         recompute its hash (sha256, base64) or the browser will block it. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-a1lxTnTR+Vasf20xOrQg7hIMs3yZXcBKFpv1+seIIQY='; style-src 'sha256-HQj3oqlXp334p5gL2BZ7NpJWnSPS90kkdB/K+bh856Q=' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; base-uri 'none'; form-action 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-lPSQNfDBTfws8S8e2XcshmqwYWl/vt95c1Yxfg3k6lk='; style-src 'sha256-eOc3SwctkN+qFUGxoIyW3lc21gssUdqE6W6tjDYk5j4=' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; base-uri 'none'; form-action 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merim Kulovac has moved to merim.dev</title>
@@ -15,10 +12,8 @@
     <meta name="theme-color" content="#06070c">
     <meta name="color-scheme" content="dark">
 
-    <!-- Tell search engines merim.dev is the authoritative version of this content -->
     <link rel="canonical" href="https://merim.dev/">
 
-    <!-- Fallback for visitors and crawlers without JavaScript -->
     <noscript><meta http-equiv="refresh" content="0; url=https://merim.dev/"></noscript>
 
     <meta property="og:type" content="website">
@@ -220,7 +215,6 @@
             outline: none;
         }
 
-        /* Countdown ring around the arrow */
         .ring {
             position: relative;
             width: 44px;
@@ -316,7 +310,6 @@
             from { opacity: 0; transform: translateY(12px) scale(.6); }
         }
 
-        /* Hyperspace exit */
         body.leaving .card {
             transform: scale(.6) translateZ(0);
             opacity: 0;
@@ -363,7 +356,7 @@
             </a>
 
             <p class="timer" id="timer" aria-live="polite">
-                <span class="count-text">Taking you there in <strong id="count">8</strong>s · <button type="button" id="stay">Stay here</button></span>
+                <span class="count-text">Taking you there in <strong id="count">8</strong>s | <button type="button" id="stay">Stay here</button></span>
                 <span class="paused-text">Redirect paused.</span>
             </p>
 
@@ -390,7 +383,6 @@
             var SECONDS = 8;
             var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            // ---- Starfield that accelerates into hyperspace on exit ----
             var canvas = document.getElementById('warp');
             var ctx = canvas.getContext('2d');
             var stars = [];
@@ -448,7 +440,6 @@
 
             if (!reduceMotion) requestAnimationFrame(frame);
 
-            // ---- Typewriter for the domain ----
             var typed = document.getElementById('typed');
             if (!reduceMotion) {
                 var word = typed.textContent;
@@ -460,7 +451,6 @@
                 }, 700);
             }
 
-            // ---- Countdown + redirect ----
             var left = SECONDS;
             var countEl = document.getElementById('count');
             var timerEl = document.getElementById('timer');
